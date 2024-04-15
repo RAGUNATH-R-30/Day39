@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const { MongoClient , ObjectId } = require("mongodb");
-const URL = "mongodb+srv://ragunath3003:admin@cluster0.lmyxz0w.mongodb.net/";
+const URL = process.env.DB;
 
 app.use(express.json());
 app.listen(3000);
